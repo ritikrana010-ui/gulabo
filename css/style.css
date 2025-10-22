@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #0b1a13;
+  color: #f5f0e6;
+  overflow-x: hidden;
+}
+header {
+  background-color: rgba(10, 25, 17, 0.9);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.logo { height: 70px; }
+.nav-links { list-style: none; display: flex; gap: 30px; }
+.nav-links a { color: #e6c08f; text-decoration: none; transition: color 0.3s; }
+.nav-links a:hover { color: #f1b6c2; }
+.hero {
+  background: url('../images/roses-bg.jpg') center/cover fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.hero-content {
+  background: rgba(11, 26, 19, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in;
+}
+.btn {
+  background-color: #e6c08f;
+  color: #0b1a13;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.4s;
+}
+.btn:hover { background-color: #f1b6c2; }
+.content-section { padding: 120px 60px; max-width: 900px; margin: auto; }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+.product-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #e6c08f;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  background-color: #0b1a13;
+  padding: 40px 20px;
+  border-top: 1px solid #e6c08f;
+}
+footer img { height: 50px; margin-bottom: 10px; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
